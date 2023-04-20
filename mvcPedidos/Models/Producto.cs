@@ -11,6 +11,7 @@ namespace mvcPedidos.Models
 
         [Required(ErrorMessage = "El nombre es requerido")]
         [MaxLength(50, ErrorMessage = "El nombre debe tener máximo a 50 caracteres")]
+        [Display(Name = "Descripción")]
         public string Nombre { get; set; }
 
         [Required(ErrorMessage = "El precio es requerido")]
